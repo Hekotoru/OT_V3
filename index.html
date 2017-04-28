@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <ul id="messages"></ul>
+    <textarea id ="m" rows="4" cols="50" onchange="updateMessage()"></textarea>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  var socket = io();
+    socket.on('chat message', function(msg){
+      document.getElementById("m").value = msg;
+    });
+  function updateMessage(){
+      socket.emit('chat message',document.getElementById("m").value);
+  }
+</script>
+</script>
+  </body>
+</html>

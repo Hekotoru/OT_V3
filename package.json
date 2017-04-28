@@ -1,0 +1,19 @@
+{
+  "name": "ot_problem",
+  "version": "1.0.0",
+  "description": "Haciendo un proyecto para probar el OT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "OT"
+  ],
+  "author": "Hector Aristy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pubsub-js": "^1.5.6",
+    "socket.io": "^1.7.3"
+  }
+}
